@@ -1,6 +1,6 @@
 # clavix.org
 
-Marketing site for [Clavix](https://github.com/Upellift99/clavix) — a modern
+Marketing site for [Clavix](https://github.com/clavix-org/clavix) — a modern
 desktop client for Vaultwarden & Bitwarden.
 
 Plain static site (hand-written HTML/CSS/JS, no build step, no trackers),
