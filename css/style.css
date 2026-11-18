@@ -560,6 +560,7 @@ td > svg, td > .ic { display: inline-block; vertical-align: middle; }
 .dl-grid { display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: 3.5rem; align-items: start; }
 .dl-version { margin-top: 1.5rem; font-size: 0.9375rem; color: var(--ink-2); }
 .dl-version a { font-weight: 600; }
+.dl-signing { margin-top: 0.75rem; font-size: 0.875rem; color: var(--muted); }
 .chip-alpha {
   display: inline-block; margin-left: 0.25rem; padding: 0 0.45rem; border-radius: 999px;
   font-size: 0.75rem; font-weight: 600; letter-spacing: 0.04em; vertical-align: 0.1em;
