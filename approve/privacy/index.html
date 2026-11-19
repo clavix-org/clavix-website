@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clavix Approve — Confidentialité / Privacy</title>
+  <meta name="description" content="Politique de confidentialité de l'application Clavix Approve et de son relais. Privacy policy of the Clavix Approve app and its relay.">
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+  <link rel="canonical" href="https://clavix.org/approve/privacy/">
+  <meta name="color-scheme" content="light dark">
+  <style>
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 100 900;
+      font-display: swap;
+      src: url('../../assets/fonts/inter-latin.woff2') format('woff2');
+    }
+    :root {
+      --ground: #f4f6f6;
+      --paper: #ffffff;
+      --ink: #16191a;
+      --ink-2: #2e3538;
+      --muted: #5f696d;
+      --hair: #d8dcdc;
+      --acc: #0d7f81;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --ground: #171a1b;
+        --paper: #1f2425;
+        --ink: #eceff0;
+        --ink-2: #c9d0d2;
+        --muted: #a3adb0;
+        --hair: #353c3e;
+        --acc: #5cc2bf;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--ground);
+      color: var(--ink-2);
+      font: 16px/1.6 'Inter', system-ui, sans-serif;
+    }
+    main {
+      max-width: 46rem;
+      margin: 0 auto;
+      padding: 3rem 1rem 4rem;
+    }
+    article {
+      background: var(--paper);
+      border: 1px solid var(--hair);
+      border-radius: 12px;
+      padding: 2rem clamp(1rem, 4vw, 2.5rem);
+      margin-bottom: 2rem;
+    }
+    h1, h2 { color: var(--ink); line-height: 1.25; }
+    h1 { font-size: 1.75rem; margin: 0 0 .25rem; }
+    h2 { font-size: 1.15rem; margin: 2rem 0 .5rem; }
+    p, li { max-width: 65ch; }
+    a { color: var(--acc); }
+    .meta { color: var(--muted); font-size: .9rem; margin: 0 0 1.5rem; }
+    .lang { color: var(--muted); font-size: .9rem; margin-bottom: 1.5rem; }
+    ul { padding-left: 1.25rem; }
+  </style>
+</head>
+<body>
+<main>
+  <p class="lang"><a href="#fr">Français</a> · <a href="#en">English</a> · <a href="../../">clavix.org</a></p>
+
+  <article id="fr" lang="fr">
+    <h1>Clavix Approve — politique de confidentialité</h1>
+    <p class="meta">Dernière mise à jour : 19 novembre 2026</p>
+
+    <p>Clavix Approve permet d'approuver depuis un iPhone les connexions SSH de vos ordinateurs et serveurs. L'application est conçue pour en savoir le moins possible sur vous : pas de compte, pas de statistiques d'usage, pas de publicité, pas de traceurs.</p>
+
+    <h2>Responsable du traitement</h2>
+    <p>Jériel B., éditeur de Clavix. Contact : <a href="mailto:support@clavix.org">support@clavix.org</a>.</p>
+
+    <h2>Ce qui reste sur votre iPhone</h2>
+    <ul>
+      <li><strong>Votre clé SSH</strong> est créée dans la puce sécurisée (Secure Enclave) de l'iPhone. Elle n'en sort jamais, et chaque signature exige Face ID ou Touch ID.</li>
+      <li><strong>Face ID / Touch ID</strong> est géré par iOS : l'application ne reçoit jamais vos données biométriques.</li>
+      <li><strong>La caméra</strong> ne sert qu'à lire le QR code d'appairage, sur l'appareil. Aucune image n'est enregistrée ni envoyée.</li>
+      <li><strong>Les machines appairées et les serveurs que vous avez retenus</strong> sont enregistrés uniquement sur l'iPhone.</li>
+    </ul>
+
+    <h2>Ce que voit le relais</h2>
+    <p>Le relais (approve.clavix.org) transmet les messages entre vos machines et votre iPhone. Ces messages sont <strong>chiffrés de bout en bout</strong> : le relais ne peut ni les lire, ni signer, ni approuver à votre place. Il traite :</p>
+    <ul>
+      <li>des identifiants techniques aléatoires de canal et d'appareil, et l'empreinte des jetons d'accès ;</li>
+      <li>les messages chiffrés, conservés le temps de leur traitement (quelques minutes au plus) ;</li>
+      <li>le jeton de notification Apple de votre iPhone, pour vous prévenir d'une demande ;</li>
+      <li>l'adresse IP des connexions, utilisée en mémoire pour limiter les abus (nombre de requêtes par adresse), et inscrite dans les journaux techniques du serveur, conservés pour une durée limitée à des fins de sécurité.</li>
+    </ul>
+    <p>Un canal inutilisé pendant 90 jours est supprimé automatiquement. « Oublier cette machine » dans l'application le supprime immédiatement du relais.</p>
+
+    <h2>Notifications</h2>
+    <p>Les notifications passent par le service Apple Push Notification d'Apple. Leur contenu est générique (« Une demande de signature attend ») : aucun nom de serveur ni détail de la demande n'est transmis à Apple.</p>
+
+    <h2>Abonnements</h2>
+    <p>Les achats faits dans l'application sont traités par Apple. Nous ne recevons ni votre identité, ni vos moyens de paiement.</p>
+
+    <h2>Bases légales</h2>
+    <p>Ces traitements sont nécessaires pour fournir le service que vous demandez (exécution du contrat). La limitation des abus repose sur notre intérêt légitime à protéger le service.</p>
+
+    <h2>Partage</h2>
+    <p>Aucune donnée n'est vendue, ni partagée à des fins publicitaires. Seul Apple intervient, pour les notifications et les paiements.</p>
+
+    <h2>Vos droits</h2>
+    <p>Vous pouvez demander l'accès à vos données, leur rectification ou leur effacement en écrivant à <a href="mailto:support@clavix.org">support@clavix.org</a>. Comme le relais ne connaît pas votre identité, il est souvent plus simple d'utiliser « Oublier cette machine » dans l'application. Vous pouvez aussi adresser une réclamation à la CNIL (<a href="https://www.cnil.fr">cnil.fr</a>).</p>
+
+    <h2>Code source</h2>
+    <p>Le code de l'application, de l'agent et du relais est public : <a href="https://github.com/clavix-org/clavix-approve">github.com/clavix-org/clavix-approve</a>. Vous pouvez aussi héberger votre propre relais.</p>
+  </article>
+
+  <article id="en" lang="en">
+    <h1>Clavix Approve — privacy policy</h1>
+    <p class="meta">Last updated: November 19, 2026</p>
+
+    <p>Clavix Approve lets you approve your computers' and servers' SSH logins from an iPhone. It is built to know as little about you as possible: no account, no usage analytics, no ads, no trackers.</p>
+
+    <h2>Data controller</h2>
+    <p>Jériel B., publisher of Clavix. Contact: <a href="mailto:support@clavix.org">support@clavix.org</a>.</p>
+
+    <h2>What stays on your iPhone</h2>
+    <ul>
+      <li><strong>Your SSH key</strong> is created in the iPhone's Secure Enclave. It never leaves it, and every signature requires Face ID or Touch ID.</li>
+      <li><strong>Face ID / Touch ID</strong> is handled by iOS: the app never receives your biometric data.</li>
+      <li><strong>The camera</strong> is only used to read the pairing QR code, on the device. No image is stored or sent.</li>
+      <li><strong>Paired machines and the servers you remembered</strong> are stored on the iPhone only.</li>
+    </ul>
+
+    <h2>What the relay sees</h2>
+    <p>The relay (approve.clavix.org) passes messages between your machines and your iPhone. These messages are <strong>end-to-end encrypted</strong>: the relay cannot read them, sign, or approve on your behalf. It processes:</p>
+    <ul>
+      <li>random technical channel and device identifiers, and hashes of the access tokens;</li>
+      <li>the encrypted messages, kept only while they are handled (a few minutes at most);</li>
+      <li>your iPhone's Apple push token, to notify you of a request;</li>
+      <li>the IP address of connections, used in memory to limit abuse (requests per address), and written to the server's technical logs, kept for a limited time for security purposes.</li>
+    </ul>
+    <p>A channel unused for 90 days is deleted automatically. "Forget this machine" in the app deletes it from the relay immediately.</p>
+
+    <h2>Notifications</h2>
+    <p>Notifications go through Apple's Push Notification service. Their content is generic (« Une demande de signature attend », "a signature request is waiting"): no server name or request detail is sent to Apple.</p>
+
+    <h2>Subscriptions</h2>
+    <p>In-app purchases are processed by Apple. We receive neither your identity nor your payment details.</p>
+
+    <h2>Legal bases</h2>
+    <p>This processing is necessary to provide the service you request (performance of a contract). Abuse limiting relies on our legitimate interest in protecting the service.</p>
+
+    <h2>Sharing</h2>
+    <p>No data is sold or shared for advertising. Only Apple is involved, for notifications and payments.</p>
+
+    <h2>Your rights</h2>
+    <p>You can ask for access to, correction or deletion of your data by writing to <a href="mailto:support@clavix.org">support@clavix.org</a>. Since the relay does not know who you are, "Forget this machine" in the app is often the simplest way. You can also lodge a complaint with your data protection authority (in France, the CNIL: <a href="https://www.cnil.fr">cnil.fr</a>).</p>
+
+    <h2>Source code</h2>
+    <p>The code of the app, the agent and the relay is public: <a href="https://github.com/clavix-org/clavix-approve">github.com/clavix-org/clavix-approve</a>. You can also host your own relay.</p>
+  </article>
+</main>
+</body>
+</html>
